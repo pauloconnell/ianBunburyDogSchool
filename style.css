@@ -1,0 +1,250 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, serif;
+  margin-right: 18px;
+  background: url("https://res.cloudinary.com/pollie/image/upload/v1613532009/HenryInukshuk_xom7mt.png");
+  background-size: cover;
+}
+
+h1 {
+  border: 5px solid red;
+  font-size: 35px;
+  color: red;
+  background: black;
+  width: 50%;
+  border-radius: 12px;
+}
+
+td {
+  background: rgb(0, 0, 0, 0.6);
+  color: red;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+a {
+  color: red;
+  font-weight: bold;
+  border-radius: 12px;
+  text-align: center;
+  display: block;
+  margin-bottom: 8px;
+}
+a:hover {
+  color: gold;
+  display: block;
+  text-align: center;
+}
+
+img {
+  border: solid 5px;
+  border-radius: 12px;
+}
+
+textarea {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+iframe {
+min-height: 350px;
+}
+
+.title {
+  width: 90%;
+  opacity: 0.8;
+}
+
+.image {
+  width: 85%;
+  align-content: center;
+  align-items: center;
+}
+
+.big {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.blue {
+  width: 90%;
+  background-color: rgb(4, 2, 94, 0.8);
+  border-radius: 15px;
+  color: white;
+}
+.detail {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border: 5px solid red;
+}
+
+.evenSpaced {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* slide show css here:
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  text-align: center;
+  text-weight: bold;
+  width: 100%;
+  text-shadow: white 2px 2px 5px;
+  
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  font-weight:bold;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+./* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+  
+
+/* If the screen size is 601px or more, set the font-size  */
+@media only screen and (min-width: 601px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  a {
+    font-size: 30px;
+  }
+
+  .big {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .title {
+    border: 5px solid black;
+    font-size: 50px;
+    color: red;
+    background: black;
+    width: 60%;
+    border-radius: 12px;
+  }
+
+  .image {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 901px) {
+  iframe {
+    height:500px;
+  }
+  .title {
+    width: 45%;
+  }
+  .image {
+    width: 75%;
+    max-height:800px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+   iframe {
+    height:800px;
+  }
+  .title {
+    width: 40%;
+  }
+
+  .image {
+    width: 60%;
+  }
+}
